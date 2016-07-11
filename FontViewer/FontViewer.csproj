@@ -12,7 +12,7 @@
     <AssemblyName>FontViewer</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <ApplicationIcon>FontView.ico</ApplicationIcon>
+    <ApplicationIcon>FontViewer.ico</ApplicationIcon>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
@@ -84,7 +84,7 @@
     <None Include="Resources\Clear.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="FontView.ico" />
+    <Content Include="FontViewer.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
