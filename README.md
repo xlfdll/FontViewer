@@ -20,3 +20,5 @@ Double click a font item to view in font preview system utility.
 
 ## Development Prerequisites
 * Visual Studio 2012+
+
+Before the build, generate-build-number.sh needs to be executed in a Git / Bash shell to generate build information code file (BuildInfo.cs).
