@@ -146,7 +146,9 @@ namespace FontViewer
 
         private void fontFolderLinkToolStripStatusLabel_Click(object sender, EventArgs e)
         {
-            Process.Start(Path.Combine(Environment.SystemDirectory, "rundll32.exe"), "shell32.dll,SHHelpShortcuts_RunDLL FontsFolder");
+            using (Process.Start
+                (Path.Combine(Environment.SystemDirectory, "rundll32.exe"),
+                "shell32.dll,SHHelpShortcuts_RunDLL FontsFolder")) { }
 
             fontFolderLinkToolStripStatusLabel.LinkVisited = true;
         }
@@ -257,7 +259,7 @@ namespace FontViewer
                 {
                     String command = Path.Combine(fontsFolderPath, fontFileName);
 
-                    Process.Start(command);
+                    using (Process.Start(command)) { }
                 }
             }
         }
